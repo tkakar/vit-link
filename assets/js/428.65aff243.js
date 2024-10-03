@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvitessce_Link=self.webpackChunkvitessce_Link||[]).push([[428],{2428:(e,s,c)=>{c.r(s),c.d(s,{default:()=>t});var n=c(7502),r=c(1781);c(758),c(8143);class t extends r.aQ{decodeBlock(e){return(0,n.i)(new Uint8Array(e)).buffer}}}}]);
