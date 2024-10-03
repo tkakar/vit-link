@@ -38,7 +38,6 @@ jobs:
 
       - name: Deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.VIT_LINK }}
-        run: |
-          git remote set-url origin https://x-access-token:${{ secrets.VIT_LINK }}@github.com/${{ github.repository }}
-          pnpm run deploy
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT_TOKEN: ${{ secrets.VIT_LINK }}
+        run: pnpm run deploy
