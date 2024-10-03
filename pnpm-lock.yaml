@@ -59,9 +59,6 @@ importers:
       vite:
         specifier: ^5.4.2
         version: 5.4.8(@types/node@22.7.4)(terser@5.34.1)
-      vite-plugin-environment:
-        specifier: ^1.1.3
-        version: 1.1.3(vite@5.4.8(@types/node@22.7.4)(terser@5.34.1))
       vitessce:
         specifier: ^3.4.9
         version: 3.4.12(cdz4t2dlnqfardlba4oaqdxiiu)
@@ -8117,11 +8114,6 @@ packages:
   viewport-mercator-project@7.0.4:
     resolution: {integrity: sha512-0jzpL6pIMocCKWg1C3mqi/N4UPgZC3FzwghEm1H+XsUo8hNZAyJc3QR7YqC816ibOR8aWT5pCsV+gCu8/BMJgg==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-
-  vite-plugin-environment@1.1.3:
-    resolution: {integrity: sha512-9LBhB0lx+2lXVBEWxFZC+WO7PKEyE/ykJ7EPWCq95NEcCpblxamTbs5Dm3DLBGzwODpJMEnzQywJU8fw6XGGGA==}
-    peerDependencies:
-      vite: '>= 2.7'
 
   vite@5.4.8:
     resolution: {integrity: sha512-FqrItQ4DT1NC4zCUqMB4c4AZORMKIa0m8/URVCZ77OZ/QSNeJ54bU1vrFADbDsuwfIPcgknRkmqakQcgnL4GiQ==}
@@ -19756,10 +19748,6 @@ snapshots:
   viewport-mercator-project@7.0.4:
     dependencies:
       '@math.gl/web-mercator': 3.6.3
-
-  vite-plugin-environment@1.1.3(vite@5.4.8(@types/node@22.7.4)(terser@5.34.1)):
-    dependencies:
-      vite: 5.4.8(@types/node@22.7.4)(terser@5.34.1)
 
   vite@5.4.8(@types/node@22.7.4)(terser@5.34.1):
     dependencies:
