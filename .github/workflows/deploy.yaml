@@ -20,8 +20,8 @@ jobs:
 
       - name: Configure Git
         run: |
-            git config --global user.name "tkakar"
-            git config --global user.email "tkakar@wpi.edu"
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
   
 
       - name: Install pnpm
@@ -34,11 +34,11 @@ jobs:
 
       - name: Build the project
         run: |
-          pnpm run build  # This runs the docusaurus build command
+          pnpm run build 
 
       - name: Deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.VIT_LINK }}
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           pnpm run deploy
