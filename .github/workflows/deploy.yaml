@@ -18,6 +18,12 @@ jobs:
         with:
           node-version: '18'  
 
+      - name: Configure Git
+        run: |
+            git config --global user.name "tkakar"
+            git config --global user.email "tkakar@wpi.edu"
+  
+
       - name: Install pnpm
         run: |
           npm install -g pnpm
@@ -33,5 +39,3 @@ jobs:
       - name: Deploy to GitHub Pages
         run: |
           pnpm run deploy  # This runs the gh-pages deploy command
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
