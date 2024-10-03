@@ -36,6 +36,9 @@ jobs:
         run: |
           pnpm run build  # This runs the docusaurus build command
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pnpm run deploy  # This runs the gh-pages deploy command
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          pnpm run deploy
