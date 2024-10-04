@@ -2,7 +2,6 @@
   "name": "vitessce-Link",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tkakar.github.io/vit-link/",
   "dependencies": {
     "@docusaurus/core": "^3.5.2",
     "@docusaurus/preset-classic": "^3.5.2",
